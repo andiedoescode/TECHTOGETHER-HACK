@@ -82,7 +82,7 @@ function amount401k(){
        // let otherperiodintrate = Math.pow((1 + r/k), otherperiodN*k)
        // let otherperiodnumerator = d * (otherperiodintrate -1)
         let otherperiodsvalueIndex = numeratorIndex / denominatorIndex
-        let valueIndex = catchupperiodsvalueIndex + currentBalance + otherperiodsvalueIndex
+        let valueIndex = catchupperiodsvalueIndex + otherperiodsvalueIndex + currentBalance 
         document.querySelector('#indexResult').innerText = valueIndex 
     }
     
